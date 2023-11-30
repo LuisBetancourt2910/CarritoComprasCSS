@@ -1,0 +1,422 @@
+header {
+    background-color: rgba(8, 8, 8, 0.705);
+    width: 100%;
+    height: 100px;
+    padding: 1rem;
+}
+
+#menu {
+    font-size: 28pt;
+    font-weight: bold;
+    color: rgb(247, 242, 242);
+}
+
+.btos {
+    background-color: transparent;
+    border: none;
+    font-size: 40pt;
+    color: rgb(252, 252, 252);
+    font-weight: bold;
+    margin-right: 1rem;
+    box-shadow: rgb(180, 178, 178) 0 0 5rem;
+    border-radius: .5rem;
+
+}
+
+.btos:hover {
+    color: rgb(103, 103, 112)
+}
+
+#logo {
+    height: 100px;
+}
+
+header h1 {
+    color: white;
+    text-shadow: powderblue;
+
+}
+
+#oscuro {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(196, 190, 190, 0.843);
+    /* Color con opacidad */
+    z-index: 999;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    margin: 20% auto;
+    /* Alineado en el centro verticalmente */
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+/* Estilos para la clase "container" */
+.container {
+    width: 300px;
+    /* Ancho del contenedor */
+    margin: auto;
+    /* Centra el contenedor en la página */
+    padding: 16px;
+    /* Espaciado interno del contenedor */
+    background-color: #f2f2f2;
+    /* Color de fondo del contenedor */
+    border: 1px solid #ccc;
+    /* Borde del contenedor */
+    border-radius: 8px;
+    /* Bordes redondeados del contenedor */
+}
+
+/* Estilos para las etiquetas de los input dentro de la clase "container" */
+.container label {
+    font-weight: bold;
+    /* Texto en negrita */
+}
+
+/* Estilos para los input dentro de la clase "container" */
+.container input {
+    width: 100%;
+    /* Ancho del input al 100% del contenedor */
+    padding: 8px;
+    /* Espaciado interno del input */
+    margin: 8px 0;
+    /* Espaciado externo del input */
+    box-sizing: border-box;
+    /* El tamaño total del elemento incluye el relleno y el borde, pero no el margen */
+}
+
+/* Estilos para el botón dentro de la clase "container" */
+.container button {
+    background-color: #4caf50;
+    /* Color de fondo del botón */
+    color: white;
+    /* Color del texto del botón */
+    padding: 10px 15px;
+    /* Espaciado interno del botón */
+    border: none;
+    /* Sin borde */
+    border-radius: 4px;
+    /* Bordes redondeados del botón */
+    cursor: pointer;
+    /* Cursor de puntero al pasar sobre el botón */
+}
+
+/* Estilos para el checkbox dentro de la clase "container" */
+.container input[type="checkbox"] {
+    margin-bottom: 16px;
+    /* Espaciado inferior del checkbox */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    color: #fff;
+    text-shadow: 0 0 1rem red;
+    font-size: 50px;
+    font-weight: bold;
+    background-color: black;
+    border-radius: .5rem;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(.5)
+    }
+}
+
+.animate_btos {
+    -webkit-animation: animation_btos 1s;
+    animation: animation_btos 1s;
+}
+
+@-webkit-keyframes animation_btos {
+    from {
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@keyframes animation_btos {
+    from {
+        width: 0;
+        height: 0;
+    }
+
+    to {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+
+/*****Contenido Principal****/
+main {
+    padding: 1rem;
+    font-size: 28pt;
+    background: url("../img/fondo.jpg");
+    background-size: cover;
+
+
+}
+
+/****Cintilla de categorias*****/
+.h3_cat {
+    padding: 1rem;
+    background-color: rgba(229, 255, 0, 0.021);
+
+    margin: 1rem 0;
+}
+
+.card {
+    width: 20%;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem black;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: .5s;
+}
+
+.starProd {
+    width: 45%;
+    border-top: 1px dotted #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.prodFrame {
+    width: 250px;
+    height: 250px;
+    border: white solid .5rem;
+    border-radius: 125px;
+    padding: 1rem;
+
+
+}
+
+.imgProdStar {
+    width: 100%;
+    height: 100%;
+    border: white solid .3rem;
+    border-radius: 125px;
+    background: white url("../img/compra.png") no-repeat center center;
+    background-size: 90%;
+}
+
+.prodDetails {
+    max-width: 50%;
+    height: 200px;
+    padding: .5rem;
+}
+
+.prodDetails h3 {
+    color: white;
+    background-color: palevioletred;
+    border-radius: .3rem;
+    padding: 1rem;
+    text-shadow: black .1rem .1rem .0rem,
+
+}
+
+.prodDetails p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/**** Footer *****/
+footer {
+    background-color: rgba(237, 178, 186, 0);
+    height: 100px;
+    width: 100%;
+}
+
+.btos {
+    float: right;
+    background-color: rgba(211, 199, 204, 0.726);
+    width: 100%;
+}
+
+
+/**** Responsive ****/
+@media screen and (max-width:768px) and (max-width:1023px) {
+    .starProd {
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+    header h1 {
+        display: none;
+
+    }
+
+    .btos {
+        font-size: 2rem;
+        margin-right: .5rem;
+    }
+
+    card {
+        width: 45%;
+    }
+
+    .starProds {
+        width: 100%;
+        align-items: center;
+    }
+
+    .starProd {
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0;
+        -ms-flex-align: center;
+        justify-content: center;
+
+    }
+
+    .prodDetails {
+        margin: 1.5rem 0 0 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .prodDetails h3 {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .prodDetails button {
+        width: 100%;
+        height: 60px;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+
+    #logo {
+        height: 55px;
+
+    }
+
+    .btos {
+        margin-right: .25rem;
+    }
+
+    .card {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .card a {
+        display: none;
+    }
+
+
+}
